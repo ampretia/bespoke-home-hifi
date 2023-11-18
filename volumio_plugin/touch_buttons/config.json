@@ -1,0 +1,27 @@
+{
+  "playPause":{
+    "enabled": {"value": false, "type": "boolean"},
+    "pin": {"value": 0,"type":"number"},
+    "value": {"value": 0, "type": "number"}
+  },
+  "previous":{
+    "enabled": {"value": false, "type": "boolean"},
+    "pin": {"value": 3,"type":"number"},
+    "value": {"value": 0, "type": "number"}
+  },
+  "next":{
+    "enabled": {"value": false, "type": "boolean"},
+    "pin": {"value": 4,"type":"number"},
+    "value": {"value": 0, "type": "number"}
+  },
+  "radio":{
+    "enabled": {"value": false, "type": "boolean"},
+    "pin": {"value": 5,"type":"number"},
+    "value": {"value": 0, "type": "number"}
+  },
+  "spotify":{
+    "enabled": {"value": false, "type": "boolean"},
+    "pin": {"value": 5,"type":"number"},
+    "value": {"value": 0, "type": "number"}
+  }
+}

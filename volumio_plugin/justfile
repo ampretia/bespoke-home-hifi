@@ -1,0 +1,30 @@
+
+
+# Ensure all properties are exported as shell env-vars
+set export
+
+# load from dotenv
+set dotenv-load
+
+# set the current directory, and the location of the test dats
+CWDIR := justfile_directory()
+
+_default:
+  @just -f {{justfile()}} --list
+
+restart:
+  ssh volumio@volumio.local "volumio vrestart"
+
+log:
+  #!/bin/bash
+  set -x
+  ssh volumio@volumio.local " journalctl -u volumio -f"
+
+update:
+    #!/bin/bash
+    set -x
+    
+    scp -r touch_buttons/*.js* volumio@192.168.1.213:/home/volumio/volumio-plugins-sources/touch_buttons
+    scp -r touch_buttons/lib/*.js* volumio@192.168.1.213:/home/volumio/volumio-plugins-sources/touch_buttons/lib
+    ssh volumio@volumio.local "cd /home/volumio/volumio-plugins-sources/touch_buttons && volumio plugin refresh"
+

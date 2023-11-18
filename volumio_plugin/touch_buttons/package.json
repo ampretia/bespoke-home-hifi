@@ -1,0 +1,43 @@
+{
+	"name": "touch_buttons",
+	"version": "1.0.0",
+	"description": "Touch Button Controller",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "mbw",
+	"license": "ISC",
+	"repository": "https://github.com/yourname/yourrepo",
+	"volumio_info": {
+		"prettyName": "touch_buttons",
+		"icon": "fa-lightbulb-o",
+		"plugin_type": "system_controller",
+		"boot_priority": 10,
+		"architectures": [
+			"amd64",
+			"armhf",
+			"i386"
+		],
+		"os": [
+			"buster"
+		],
+		"details": "Lorem ipsum",
+		"changelog": "Lorem ipsum"
+	},
+	"engines": {
+		"node": ">=14.15.4 <15.0.0",
+		"volumio": ">=3.512.0 <4.0.0"
+	},
+	"dependencies": {
+		"fs-extra": "^5.0.0",
+		"i2c-bus": "^5.2.3",
+		"kew": "^0.7.0",
+		"socket.io-client": "^1.7.4",
+		"v-conf": "^1.4.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.53.0",
+		"eslint-config-prettier": "^9.0.0"
+	}
+}

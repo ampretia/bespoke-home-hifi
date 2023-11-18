@@ -1,0 +1,404 @@
+{
+  "page": {
+    "label": "Touch Buttons"
+  },
+  "sections": [
+    {
+      "id": "touch_setup",
+      "element": "section",
+      "label": "Setup your button actions",
+      "icon": "fa-plug",
+      "onSave": {"type":"controller", "endpoint":"system_controller/touch_buttons", "method":"saveConfig"},
+      "saveButton": {
+        "label": "Save",
+        "data": [
+          "playPauseEnabled",
+          "playPausePin",
+          "previousEnabled",
+          "previousPin",
+          "nextEnabled",
+          "nextPin",
+          "radioEnabled",
+          "radioPin",
+          "spotifyEnabled",
+          "spotifyPin"
+        ]
+      },
+      "content": [
+        {
+          "id": "radioEnabled",
+          "element": "switch",
+          "label": "Enable Radio",
+          "value": false
+        },
+        {
+          "id": "radioPin",
+          "element": "select",
+          "label": "GPIO Pin",
+          "value": {"value": 0,
+                    "label": "0"
+          },
+
+          "options": [
+            {
+              "value": 0,
+              "label": "0"
+            },
+
+            {
+              "value": 1,
+              "label": "1"
+            },
+
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "7"
+            },
+            {
+              "value": 8,
+              "label": "8"
+            },
+            {
+              "value": 9,
+              "label": "9"
+            },
+            {
+              "value": 10,
+              "label": "10"
+            },
+            {
+              "value": 11,
+              "label": "11"
+            },
+            {
+              "value": 12,
+              "label": "12"
+            }
+          ],
+          "visibleIf": {
+            "field": "playPauseEnabled",
+            "value": true
+          }
+        },
+
+        {
+          "id": "spotifyEnabled",
+          "element": "switch",
+          "label": "Enable Spotify",
+          "value": false
+        },
+        {
+          "id": "spotifyPin",
+          "element": "select",
+          "label": "Pin",
+          "value": {"value": 0,
+                    "label": "0"
+          },
+
+          "options": [
+            {
+              "value": 0,
+              "label": "0"
+            },
+
+            {
+              "value": 1,
+              "label": "1"
+            },
+
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "7"
+            },
+            {
+              "value": 8,
+              "label": "8"
+            },
+            {
+              "value": 9,
+              "label": "9"
+            },
+            {
+              "value": 10,
+              "label": "10"
+            },
+            {
+              "value": 11,
+              "label": "11"
+            },
+            {
+              "value": 12,
+              "label": "12"
+            }
+          ],
+          "visibleIf": {
+            "field": "spotifyEnabled",
+            "value": true
+          }
+        },
+
+        {
+          "id": "playPauseEnabled",
+          "element": "switch",
+          "label": "Enable Play/pause",
+          "value": false
+        },
+        {
+          "id": "playPausePin",
+          "element": "select",
+          "label": "GPIO Pin",
+          "value": {"value": 0,
+                    "label": "0"
+          },
+
+          "options": [
+            {
+              "value": 0,
+              "label": "0"
+            },
+
+            {
+              "value": 1,
+              "label": "1"
+            },
+
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "7"
+            },
+            {
+              "value": 8,
+              "label": "8"
+            },
+            {
+              "value": 9,
+              "label": "9"
+            },
+            {
+              "value": 10,
+              "label": "10"
+            },
+            {
+              "value": 11,
+              "label": "11"
+            },
+            {
+              "value": 12,
+              "label": "12"
+            }
+          ],
+          "visibleIf": {
+            "field": "playPauseEnabled",
+            "value": true
+          }
+        },
+        {
+          "id": "previousEnabled",
+          "element": "switch",
+          "label": "Enable Previous",
+          "value": false
+        },
+        {
+          "id": "previousPin",
+          "element": "select",
+          "label": "GPIO Pin",
+          "value": {"value": 0,
+                    "label": "0"
+          },
+
+          "options": [
+            {
+              "value": 0,
+              "label": "0"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "7"
+            },
+            {
+              "value": 8,
+              "label": "8"
+            },
+            {
+              "value": 9,
+              "label": "9"
+            },
+            {
+              "value": 10,
+              "label": "10"
+            },
+            {
+              "value": 11,
+              "label": "11"
+            },
+            {
+              "value": 12,
+              "label": "12"
+            }
+          ],
+          "visibleIf": {
+            "field": "previousEnabled",
+            "value": true
+          }
+        },
+        {
+          "id": "nextEnabled",
+          "element": "switch",
+          "label": "Enable Next",
+          "value": false
+        },
+        {
+          "id": "nextPin",
+          "element": "select",
+          "label": "GPIO Pin",
+          "value": {"value": 0,
+                    "label": "0"
+          },
+
+          "options": [
+            {
+              "value": 0,
+              "label": "0"
+            },
+            {
+              "value": 1,
+              "label": "1"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 3,
+              "label": "3"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 5,
+              "label": "5"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 7,
+              "label": "7"
+            },
+            {
+              "value": 8,
+              "label": "8"
+            },
+            {
+              "value": 9,
+              "label": "9"
+            },
+            {
+              "value": 10,
+              "label": "10"
+            },
+            {
+              "value": 11,
+              "label": "11"
+            },
+            {
+              "value": 12,
+              "label": "12"
+            }
+          ],
+          "visibleIf": {
+            "field": "nextEnabled",
+            "value": true
+          }
+        }
+      ]
+    }
+  ]
+}
